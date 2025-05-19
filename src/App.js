@@ -7,7 +7,7 @@ export default function IsiLittleHelper() {
   const [percentage, setPercentage] = useState(0);
   const [percentOf, setPercentOf] = useState(0);
 
-  const percentDiff = value1 && value2 ? (((value1 - value2) / value1) * 100).toFixed(2) : 0;
+  const percentDiff = value1 && value2 ? (((value2 - value1) / value1) * 100).toFixed(2) : 0;
   const xPercentOf = ((percentOf * percentage) / 100).toFixed(2);
   const increased = (percentOf * (1 + percentage / 100)).toFixed(2);
   const decreased = (percentOf * (1 - percentage / 100)).toFixed(2);
