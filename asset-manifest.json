@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/isi-little-helper/static/css/main.fbb375b9.css",
-    "main.js": "/isi-little-helper/static/js/main.1edbb091.js",
+    "main.js": "/isi-little-helper/static/js/main.47841265.js",
     "static/js/453.11e655eb.chunk.js": "/isi-little-helper/static/js/453.11e655eb.chunk.js",
     "index.html": "/isi-little-helper/index.html",
     "main.fbb375b9.css.map": "/isi-little-helper/static/css/main.fbb375b9.css.map",
-    "main.1edbb091.js.map": "/isi-little-helper/static/js/main.1edbb091.js.map",
+    "main.47841265.js.map": "/isi-little-helper/static/js/main.47841265.js.map",
     "453.11e655eb.chunk.js.map": "/isi-little-helper/static/js/453.11e655eb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fbb375b9.css",
-    "static/js/main.1edbb091.js"
+    "static/js/main.47841265.js"
   ]
 }
