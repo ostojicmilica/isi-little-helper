@@ -26,11 +26,12 @@ export default function IsiLittleHelper() {
       <div className="section">
         <h2>📉 Percentage Difference</h2>
         <p style={{ fontSize: "0.85rem", color: "#666" }}>
-          Quickly find out by what percentage a value has increased or decreased.
+          Quickly find out by what percentage a value has increased or decreased.<br />
+          <em>💡 Excel hint: <code>=((New-Old)/Old)*100</code></em>
         </p>
         <input
           type="number"
-          placeholder="Original Value"
+          placeholder="Original Value (Old)"
           onChange={(e) => setValue1(Number(e.target.value))}
         />
         <input
@@ -41,12 +42,16 @@ export default function IsiLittleHelper() {
         <p>
           Change: <strong>{percentDiff}%</strong>
         </p>
+        <p style={{ fontSize: "0.85rem", color: "#666" }}>
+          Excel formula: <code>=((B1-A1)/A1)*100</code> (A1=Old, B1=New)
+        </p>
       </div>
 
       <div className="section">
         <h2>📊 What is X% of Y?</h2>
         <p style={{ fontSize: "0.85rem", color: "#666" }}>
-          Enter a percentage and a number to calculate how much that percentage represents.
+          Enter a percentage and a number to calculate how much that percentage represents.<br />
+          <em>💡 Excel hint: <code>=(X/100)*Y</code></em>
         </p>
         <input
           type="number"
@@ -61,12 +66,16 @@ export default function IsiLittleHelper() {
         <p>
           Result: <strong>{xPercentOf}</strong>
         </p>
+        <p style={{ fontSize: "0.85rem", color: "#666" }}>
+          Excel formula: <code>=(A1/100)*B1</code> (A1=% value, B1=base number)
+        </p>
       </div>
 
       <div className="section">
         <h2>🚀 Growth Calculator</h2>
         <p style={{ fontSize: "0.85rem", color: "#666" }}>
-          Find out the exact percentage growth needed to go from your current value to a future target.
+          Find out the exact percentage growth needed to go from your current value to a future target.<br />
+          <em>💡 Excel hint: <code>=((Target-Current)/Current)*100</code></em>
         </p>
         <input
           type="number"
@@ -80,6 +89,9 @@ export default function IsiLittleHelper() {
         />
         <p>
           Required Growth: <strong>{growthPercentage}%</strong>
+        </p>
+        <p style={{ fontSize: "0.85rem", color: "#666" }}>
+          Excel formula: <code>=((B1-A1)/A1)*100</code> (A1=Current, B1=Target)
         </p>
       </div>
 
